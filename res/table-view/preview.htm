@@ -1,0 +1,43 @@
+<body xmlns:w="js-lib.com/wood">
+	<form class="filter">
+		<fieldset>
+			<label>First Name</label><input type="text" name="firstName" /><label>Last Name</label><input type="text" name="lastName" />
+		</fieldset>
+		<button type="submit">Submit</button>
+	</form>
+	<table class="persons-pages" data-class="js.widget.TableView" data-cfg="multi-select:true;order-by:true;page-size:3;">
+		<tr>
+			<td>ID</td>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Birth Year</td>
+		</tr>
+		<tr>
+			<td data-text="id"></td>
+			<td data-text="firstName"></td>
+			<td data-text="lastName"></td>
+			<td data-text="birthYear"></td>
+		</tr>
+		<tr>
+			<td w:widget="table-paging"></td>
+		</tr>
+	</table>
+
+	<hr />
+
+	<table class="persons-list" data-class="js.widget.TableView" data-cfg="multi-select:true;">
+		<tr>
+			<td>ID</td>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Birth Year</td>
+		</tr>
+		<tr>
+			<td data-text="id"></td>
+			<td data-text="firstName"></td>
+			<td data-text="lastName"></td>
+			<td data-text="birthYear"></td>
+		</tr>
+	</table>
+
+</body>

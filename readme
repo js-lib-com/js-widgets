@@ -1,0 +1,2 @@
+script package classes breaks with naming convention for script file
+it uses the same name as component in order to simplify build: so sys-dialog.js not SysDialog.js 

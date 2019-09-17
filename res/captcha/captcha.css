@@ -1,0 +1,40 @@
+.js-widget-captcha {
+	
+}
+
+.js-widget-captcha.invalid {
+	border-color: #A00000;
+}
+
+.js-widget-captcha p {
+	margin: 0px 0px 20px;
+}
+
+.js-widget-captcha .value {
+	color: #060;
+}
+
+.js-widget-captcha a,.js-widget-captcha a:visited {
+	text-decoration: underline;
+}
+
+.js-widget-captcha img {
+	width: 48px;
+	height: 48px;
+	margin: 4px;
+	padding: 4px;
+	border: solid 1px transparent;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.js-widget-captcha img.selected {
+	border-color: #CCC;
+	background-color: #EEE;
+}
+
+.js-widget-captcha img:hover {
+	border-color: #CCC;
+	background: radial-gradient(#AAA, #FFF);
+}

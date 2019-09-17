@@ -1,0 +1,99 @@
+.js-widget-listcontrol {
+	margin: 0px;
+	padding: 0px;
+}
+
+.js-widget-listcontrol .item {
+	display: inline-block;
+	float: left;
+	width: 72px;
+	margin: 4px 8px 0px;
+	padding: 4px 8px;
+}
+
+.js-widget-listcontrol .item .picture {
+	width: 48px;
+	height: 48px;
+	margin-left: 11px;
+	cursor: pointer;
+	padding: 1px;
+	border: solid 1px transparent;
+}
+
+.js-widget-listcontrol .item:hover .picture {
+	border-color: #009999;
+}
+
+.js-widget-listcontrol .item.selected .picture {
+	border-color: #00A000;
+}
+
+.js-widget-listcontrol .item .name {
+	text-align: center;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 4px;
+	overflow: hidden;
+	margin: 4px;
+	height: 30px;
+}
+
+/* ------------------------------------------------ */
+/* small icons */
+/* ------------------------------------------------ */
+.js-widget-listcontrol.small-icons .item {
+	width: 48px;
+	margin: 2px 4px 0px;
+	padding: 2px 4px;
+}
+
+.js-widget-listcontrol.small-icons .item .picture {
+	width: 32px;
+	height: 32px;
+	margin-left: 7px;
+}
+
+/* ------------------------------------------------ */
+/* medium icons */
+/* ------------------------------------------------ */
+.js-widget-listcontrol.medium-icons .item {
+	width: 72px;
+	margin: 4px 8px 0px;
+	padding: 4px 8px;
+}
+
+.js-widget-listcontrol.medium-icons .item .picture {
+	width: 48px;
+	height: 48px;
+	margin-left: 11px;
+}
+
+/* ------------------------------------------------ */
+/* large icons */
+/* ------------------------------------------------ */
+.js-widget-listcontrol.large-icons .item {
+	width: 80px;
+	margin: 6px 12px 0px;
+	padding: 6px 12px;
+}
+
+.js-widget-listcontrol.large-icons .item .picture {
+	width: 80px;
+	height: 80px;
+	margin-left: 0px;
+}
+
+/* ------------------------------------------------ */
+/* extra large icons */
+/* ------------------------------------------------ */
+.js-widget-listcontrol.extra-large-icons .item {
+	width: 128px;
+	margin: 8px 16px 0px;
+	padding: 8px 16px;
+}
+
+.js-widget-listcontrol.extra-large-icons .item .picture {
+	width: 128px;
+	height: 128px;
+	margin-left: 0px;
+}

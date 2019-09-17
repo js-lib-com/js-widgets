@@ -1,0 +1,120 @@
+body {
+	width: 500px;
+	margin: 20px;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+.js-widget-tableview {
+	width: 500px;
+	font-size: 11px;
+}
+
+.js-widget-tableview thead td {
+	background-color: #888;
+	background: linear-gradient(#999, #666, #888);
+	cursor: pointer;
+	white-space: nowrap;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 #000000;
+}
+
+.js-widget-tableview thead td span {
+	display: inline-block;
+	white-space: nowrap;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 #000000;
+	margin-right: 10px;
+}
+
+.js-widget-tableview thead td img {
+	position: relative;
+	vertical-align: middle;
+	top: -1px;
+	transition: transform 250ms ease;
+}
+
+.webkit .js-widget-tableview thead td img {
+	transition: -webkit-transform 250ms ease;
+}
+
+.js-widget-tableview thead td.desc img {
+	transform: rotate(180deg);
+}
+
+.webkit .js-widget-tableview thead td.desc img {
+	-webkit-transform: rotate(180deg);
+}
+
+.js-widget-tableview td {
+	border: solid 1px #E6E6E6;
+}
+
+.js-widget-tableview tbody tr.selected {
+	background-color: #F0F0F0;
+}
+
+.js-widget-tableview tbody tr:hover td, .js-widget-tableview tbody tr:hover td * {
+	background-color: #5B8A5C;
+	color: #FFF;
+	text-shadow: 1px 1px 0 #000000;
+}
+
+.js-widget-tableview {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.js-widget-tableview th {
+	background-color: #888;
+	background: linear-gradient(#999, #666, #888);
+	cursor: pointer;
+	white-space: nowrap;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 #000000;
+}
+
+.js-widget-tableview th span {
+	display: inline-block;
+	white-space: nowrap;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 #000000;
+	margin-right: 10px;
+}
+
+.js-widget-tableview th img {
+	position: relative;
+	vertical-align: middle;
+	top: -1px;
+	transition: transform 250ms ease;
+}
+
+.webkit .js-widget-tableview th img {
+	transition: -webkit-transform 250ms ease;
+}
+
+.js-widget-tableview th.desc img {
+	transform: rotate(180deg);
+}
+
+.webkit .js-widget-tableview th.desc img {
+	-webkit-transform: rotate(180deg);
+}
+
+.js-widget-tableview th, .js-widget-tableview td {
+	border: solid 1px #E6E6E6;
+	font-size: 1.4rem;
+}
+
+.js-widget-tableview tbody tr.selected {
+	background-color: #F0F0F0;
+}
+
+.js-widget-tableview tbody tr:hover td, .js-widget-tableview tbody tr:hover td *
+	{
+	background-color: #5B8A5C;
+	color: #FFF;
+	text-shadow: 1px 1px 0 #000000;
+}

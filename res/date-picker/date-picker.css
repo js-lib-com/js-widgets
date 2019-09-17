@@ -1,0 +1,97 @@
+.js-widget-datepicker {
+	position: fixed;
+}
+
+.js-widget-datepicker table {
+	border-spacing: 2px;
+	border-collapse: separate;
+	padding: 10px;
+}
+
+.js-widget-datepicker .caption {
+	padding: 4px;
+	border-bottom: 1px solid #CCCCCC;
+	cursor: move;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.js-widget-datepicker .empty {
+	height: 2px;
+}
+
+.js-widget-datepicker .preview {
+	height: 30px;
+}
+
+.js-widget-datepicker .arrow {
+	opacity: 0.6;
+	background-repeat: no-repeat;
+}
+
+.js-widget-datepicker .arrow:hover {
+	opacity: 1;
+}
+
+.js-widget-datepicker .arrow.left {
+	background-image: url(@image/left-arrow);
+	background-position: 2px;
+}
+
+.js-widget-datepicker .arrow.right {
+	background-image: url(@image/right-arrow);
+	background-position: -2px;
+}
+
+.js-widget-datepicker .left.arrow:active {
+	background-position: 0px;
+}
+
+.js-widget-datepicker .right.arrow:active {
+	background-position: 0px;
+}
+
+.js-widget-datepicker .month-days .button {
+	min-width: 0;
+	padding: 0;
+}
+
+.js-widget-datepicker td {
+	width: 30px;
+	height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+}
+
+.js-widget-datepicker td::active {
+	width: 28px;
+	height: 22px;
+	border-width: 2px;
+}
+
+.js-widget-datepicker .selected {
+	width: 28px;
+	height: 22px;
+}
+
+.js-widget-datepicker .disabled {
+	background-image: none;
+	cursor: default;
+}
+
+.js-widget-datepicker button.today {
+	float: left;
+}
+
+.js-widget-datepicker button.reset {
+	float: right;
+	margin-left: 2px;
+}
+
+.js-widget-datepicker button.cancel {
+	float: right;
+}

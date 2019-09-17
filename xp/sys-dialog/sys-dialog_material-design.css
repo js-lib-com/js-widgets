@@ -1,0 +1,113 @@
+.js-sys-dialog {
+	position: fixed;
+	width: 25%;
+	top: 200px;
+	left: 200px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #DEE7EF #DEE7EF #000 #000;
+	background: linear-gradient(to right, #888 0%, #888 20%, #999 20%, #999 100%);
+	box-shadow: 8px 8px 30px 4px #E8E8E8;
+	overflow: hidden;
+}
+
+.js-sys-dialog.moving {
+	opacity: 0.6;
+}
+
+.js-sys-dialog h1 {
+	cursor: move;
+	font-family: Calibri;
+	font-size: 28px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: left;
+	margin-left: 0;
+	opacity: 1.0;
+	text-overflow: ellipsis;
+	padding: 24px 0px 24px 24%;
+}
+
+.js-sys-dialog .content {
+	background-color: #004D63;
+	padding: 5%;
+	opacity: 1.0;
+}
+
+.js-sys-dialog .content p {
+	font-family: Calibri;
+	font-size: 18px;
+	line-height: 24px;
+	max-height: 96px;
+	color: #DEE7EF;
+	margin-bottom: 5%;
+	overflow: hidden;
+	opacity: 1.0;
+}
+
+.js-sys-dialog .content .buttons buttonx {
+	font-family: Calibri;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0;
+	width: 100px;
+	background-color: #006987;
+	border: solid 1px #DEE7EF;
+	color: #DEE7EF;
+	cursor: pointer;
+	opacity: 1.0;
+}
+
+.js-sys-dialog .prevent {
+	padding: 16px 0 16px 24%;
+	white-space: nowrap;
+	min-height: 20px;
+}
+
+.js-sys-dialog .prevent * {
+	font-size: 14px;
+}
+
+.js-sys-dialog .prevent input {
+	display: inline-block;
+	position: relative;
+	z-index: -1;
+	width: @dimen/checkbox-size;
+	height: @dimen/checkbox-size;
+	margin: 0;
+}
+
+.js-sys-dialog .prevent input:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: @dimen/checkbox-size;
+	height: @dimen/checkbox-size;
+	background-color: white;
+	border: solid 1px #E6E6E6;
+}
+
+.js-sys-dialog .prevent label {
+	display: inline-block;
+	width: auto;
+	float: none;
+	white-space: nowrap;
+	overflow: hidden;
+	height: @dimen/checkbox-size;
+	line-height: @dimen/checkbox-size;
+	vertical-align: top;
+	padding: 0 0 0 10px;
+	margin: 0;
+}
+
+.js-sys-dialog .prevent.hidden {
+	display: inherit;
+}
+
+.js-sys-dialog .prevent.hidden input {
+	display: none;
+}
+
+.js-sys-dialog .prevent.hidden label {
+	display: none;
+}

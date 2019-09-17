@@ -1,0 +1,47 @@
+.js-widget-digitalnumber>* {
+	float: left;
+	height: 26px;
+	background-image: url(@image/sprites);
+	background-repeat: no-repeat;
+	width: 23px;
+}
+
+.js-widget-digitalnumber ._0 {
+	background-position: 0px;
+}
+
+.js-widget-digitalnumber ._1 {
+	background-position: -23px;
+}
+
+.js-widget-digitalnumber ._2 {
+	background-position: -46px;
+}
+
+.js-widget-digitalnumber ._3 {
+	background-position: -69px;
+}
+
+.js-widget-digitalnumber ._4 {
+	background-position: -92px;
+}
+
+.js-widget-digitalnumber ._5 {
+	background-position: -115px;
+}
+
+.js-widget-digitalnumber ._6 {
+	background-position: -138px;
+}
+
+.js-widget-digitalnumber ._7 {
+	background-position: -161px;
+}
+
+.js-widget-digitalnumber ._8 {
+	background-position: -184px;
+}
+
+.js-widget-digitalnumber ._9 {
+	background-position: -207px;
+}

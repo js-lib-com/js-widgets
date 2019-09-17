@@ -1,0 +1,17 @@
+.preview {
+	border: solid 1px #BBB;
+	border-radius: 8px;
+	margin: 20px;
+	width: 390px;
+	height: 158px;
+	background: linear-gradient(#E0E0E0, #F8F8F8, #E0E0E0);	
+}
+
+.js-widget-paging {
+	position: relative;
+	left: 20px;
+}
+
+.js-widget-paging li {
+	border-radius: 4px;
+}

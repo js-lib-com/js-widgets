@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="widgets" default="preview">
+	<include file="d://lib/tasks.xml" />
+	<property file="d://lib/libraries.properties" />
+
+	<property name="APP" value="widgets" />
+	<property name="DISPLAY" value="j(s)-lib Widgets Preview" />
+	<property name="DESCRIPTION" value="j(s)-lib Widgets Preview" />
+
+	<property name="WAR" value="${APP}.war" />
+	<property name="JAR" value="build/${APP}.jar" />
+	<property name="RUNTIME" value="D:\jvm\tomcat\webapps" />
+	<property name="BIN" value="bin" />
+	<property name="SRC" value="script" />
+	<property name="RES" value="res" />
+	<property name="BUILD" value="../build/widget" />
+	<property name="APIDOC" value="../build/api-doc/widget" />
+
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+		<classpath>
+			<pathelement location="${LIB-ANT-CONTRIB}" />
+		</classpath>
+	</taskdef>
+
+	<target name="preview">
+		<jar destfile="build/widgets.war">
+			<zipfileset dir="${BIN}" prefix="WEB-INF/classes" />
+			<zipfileset dir="config" prefix="WEB-INF/" />
+		</jar>
+		<copy file="build/widgets.war" todir="${RUNTIME}" />
+	</target>
+
+	<target name="build-widget-jar">
+		<jar destfile="${JAR}">
+			<zipfileset dir="${BIN}" />
+		</jar>
+		<copy file="${JAR}" todir="${REPO}" />
+	</target>
+
+	<target name="publish-widgets" depends="sync-api-doc">
+		<foreach target="_build-widget" param="widget-dir" inheritall="true">
+			<path>
+				<dirset dir="${RES}" excludes="*/sample,theme" />
+			</path>
+		</foreach>
+		<js.PublishWidgets host="js-lib.com" source="${BUILD}" />
+	</target>
+
+	<target name="_build-widget">
+		<basename property="widget-name" file="${widget-dir}" />
+		<if>
+			<!-- foreach sends parent directory that need to be excluded -->
+			<equals arg1="${widget-name}" arg2="res" />
+			<else>
+				<copy file="script/js/widget/${widget-name}.js" todir="res/${widget-name}/" />
+				<zip destfile="${BUILD}/${widget-name}.zip" basedir="${widget-dir}" excludes="preview.*, sample/, readme" />
+				<delete file="res/${widget-name}/${widget-name}.js" />
+			</else>
+		</if>
+	</target>
+
+	<target name="generate-api-doc">
+		<js.GenerateScriptDoc sourcepath="${SRC}" destdir="${APIDOC}" windowtitle="j(s)-lib Widgets">
+			<link href="http://api.js-lib.com/window/" />
+			<link href="http://api.js-lib.com/client/" />
+		</js.GenerateScriptDoc>
+	</target>
+
+	<target name="sync-api-doc" depends="generate-api-doc">
+		<js.Sync host="js-lib.com" source="${APIDOC}" target="api.js-lib.com/widget" />
+	</target>
+
+
+	<target name="clean all">
+		<delete verbose="true">
+			<fileset dir="${BUILD}" includes="*.zip" />
+		</delete>
+	</target>
+</project>

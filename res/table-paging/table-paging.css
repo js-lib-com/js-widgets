@@ -1,0 +1,44 @@
+.js-widget-tablepaging {
+	min-width: 200px;
+	padding: 4px 10px;
+}
+
+.js-widget-tablepaging {
+	margin-top: 20px;
+	border: solid 1px #E6E6E6;
+	height: 24px;
+}
+
+.js-widget-tablepaging input[type=image] {
+	float: left;
+	border: none;
+	background-color: transparent;
+	background-image: none;
+	width: 16px;
+	height: 16px;
+	padding: 2px 4px;
+	margin: 0px 1px 0 0;
+	opacity: 1;
+	border: dotted 1px transparent;
+	cursor: pointer;
+}
+
+.js-widget-tablepaging input[type=image]:hover {
+	border-color: #E6E6E6;
+}
+
+.js-widget-tablepaging input[type=image].disabled {
+	opacity: 0.5;
+	cursor: default;
+	border-color: transparent;
+}
+
+.js-widget-tablepaging .text {
+	display: inline-block;
+	float: right;
+	line-height: 21px;
+}
+
+.js-widget-tablepaging .text .start,.js-widget-tablepaging .text .end,.js-widget-tablepaging .text .total {
+	font-weight: bold;
+}

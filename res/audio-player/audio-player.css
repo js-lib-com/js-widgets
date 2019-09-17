@@ -1,0 +1,82 @@
+.js-widget-audioplayer {
+	position: relative;
+	height: 90px;
+}
+
+.js-widget-audioplayer h2 {
+	float: left;
+	width: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.js-widget-audioplayer h3 {
+	float: right;
+	width: 100px;
+	text-align: right;
+}
+
+.js-widget-audioplayer h3 .current-time {
+	
+}
+
+.js-widget-audioplayer h3 .duration {
+	
+}
+
+.js-widget-audioplayer .play-button {
+	position: absolute;
+	height: 23px;
+	top: 29px;
+	width: 23px;
+	cursor: pointer;
+	background-image: url(play-button.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.js-widget-audioplayer.paused .play-button {
+	background-image: url(play-button-paused.png);
+}
+
+.js-widget-audioplayer .progress {
+	position: absolute;
+	height: 2px;
+	top: 40px;
+	left: 40px;
+	width: 300px;
+	background-image: url(player-progress-bg.jpg);
+}
+
+.js-widget-audioplayer .progress .cursor {
+	position: absolute;
+	left: 0px;
+	top: -7px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	background-image: url(cursor-knob.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.js-widget-audioplayer .volume {
+	position: absolute;
+	height: 12px;
+	xbackground-image: url(player-progress-bg.jpg);
+	left: 360px;
+	width: 400px;
+	top: 40px;
+}
+
+.js-widget-audioplayer .volume .cursor {
+	position: absolute;
+	left: 0px;
+	top: -7px;
+	width: 15px;
+	height: 15px;
+	background-image: url(cursor-knob.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}

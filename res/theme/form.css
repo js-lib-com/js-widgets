@@ -1,0 +1,124 @@
+form {
+	
+}
+
+fieldset {
+	border: solid 1px #E6E6E6;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-top-color: #E0E0E0;
+	background: linear-gradient(#E0E0E0, #FFFFFF);
+	opacity: 0.9;
+}
+
+legend {
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	padding: 0px 8px;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+label {
+	display: inline-block;
+	float: left;
+	width: 120px;
+	font-size: 11px;
+	height: 22px;
+	line-height: 22px;
+	padding: 2px 0;
+	border: solid 1px transparent;
+	margin: 0 6px 6px 0;
+}
+
+input {
+	width: 200px;
+	height: 22px;
+	xline-height: 22px;
+	font-size: 11px;
+	padding: 2px 8px;
+	margin-bottom: 6px;
+}
+
+input[type="text"],input[type="file"],input[type="password"] {
+	width: 300px;
+}
+
+input[type="text"].small,input[type="file"].small,input[type="password"].small
+	{
+	width: 100px;
+}
+
+input[type="radio"] {
+	width: inherit;
+	height: inherit;
+	line-height: inherit;
+	margin-top: 6px;
+}
+
+input[type="checkbox"] {
+	width: inherit;
+	height: inherit;
+	line-height: inherit;
+	margin-top: 6px;
+}
+
+input[data-type="number"] {
+	width: 80px;
+}
+
+input[data-type="date"] {
+	width: 100px;
+}
+
+input[data-type="time"] {
+	width: 100px;
+}
+
+select {
+	font-size: 11px;
+	padding: 2px 2px 2px 8px;
+	margin-bottom: 6px;
+	height: 28px;
+}
+
+.gecko select {
+	position: relative;
+	top: -3px;
+}
+
+select option {
+	xheight: 28px;
+	xline-height: 22px;
+	padding: 2px 2px 2px 8px;
+}
+
+textarea {
+	font-size: 11px;
+	width: 300px;
+	height: 60px;
+	padding: 2px 8px;
+	margin-bottom: 6px;
+	overflow: hidden;
+	padding: 2px 8px;
+}
+
+input,textarea,select {
+	border: solid 1px #E6E6E6;
+	background-color: white;
+	margin-right: 6px;
+}
+
+input:hover,textarea:hover,select:hover {
+	border-color: #00A000;
+}
+
+input.invalid,textarea.invalid,select.invalid {
+	border-color: #A00000;
+}
+
+input:focus,textarea:focus,select:focus {
+	background-image: none;
+	border-color: #B0B0B0;
+}

@@ -1,0 +1,70 @@
+.js-widget-tableview {
+	font-size: 11px;
+}
+
+.js-widget-tableview td, .js-widget-tableview th {
+	padding: 5px 10px;
+	vertical-align: middle;
+	white-space: nowrap;
+	cursor: default;
+}
+
+.js-widget-tableview td.wrap, .js-widget-tableview th.wrap {
+	white-space: normal;
+}
+
+.js-widget-tableview td.spare, .js-widget-tableview th.spare {
+	width: 100%;
+}
+
+.js-widget-tableview td input[type="checkbox"], .js-widget-tableview th input[type="checkbox"] {
+	margin-top: 0px !important;
+}
+
+.js-widget-tableview th {
+	padding: 6px 10px;
+}
+
+.js-widget-tableview .pagging {
+	margin-top: 20px;
+	border: solid 1px #E6E6E6;
+	height: 24px;
+}
+
+.js-widget-tableview .pagging input[type=image] {
+	float: left;
+	border: none;
+	background-color: transparent;
+	background-image: none;
+	width: 16px;
+	height: 16px;
+	padding: 2px 4px;
+	margin: 0px 1px 0 0;
+	opacity: 1;
+	border: dotted 1px transparent;
+	cursor: pointer;
+}
+
+.js-widget-tableview .pagging input[type=image]:hover {
+	border-color: #E6E6E6;
+}
+
+.js-widget-tableview .pagging input[type=image]:active {
+	
+}
+
+.js-widget-tableview .pagging input[type=image].disabled {
+	opacity: 0.5;
+	cursor: default;
+	border-color: transparent;
+}
+
+.js-widget-tableview .pagging .text {
+	display: inline-block;
+	float: right;
+	line-height: 21px;
+}
+
+.js-widget-tableview .pagging .text .start,.pagging .text .end,.pagging .text .total {
+	font-weight: bold;
+}

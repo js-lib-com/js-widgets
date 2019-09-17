@@ -1,0 +1,34 @@
+.js-widget-paging {
+	display: block;
+	list-style: none;
+	height: 34px;
+	padding: 0px;
+}
+
+.js-widget-paging li {
+	float: left;
+	width: 26px;
+	min-width: 0;
+	height: 14px;
+	margin: 2px;
+	padding: 4px 1px;
+	cursor: pointer;
+	text-align: center;
+	border: solid 1px #DDD;
+}
+
+.js-widget-paging li.active {
+	border: solid 1px #008000;
+}
+
+.js-widget-paging li:active {
+	border: solid 2px #008000;
+	padding: 3px 0px;
+}
+
+.js-widget-paging li.disabled {
+	opacity: 0.6;
+	border: solid 1px #DDD;
+	padding: 4px 1px;
+	cursor: default;
+}

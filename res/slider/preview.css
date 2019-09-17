@@ -1,0 +1,13 @@
+.js-widget-slider {
+	top: 100px;
+	left: 200px;
+	width: 400px;
+}
+
+.js-widget-slider .pointer {
+	top: -10px;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	cursor: pointer;
+}

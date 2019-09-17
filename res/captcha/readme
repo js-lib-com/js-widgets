@@ -1,0 +1,2 @@
+this CAPTCHA solution is vulnerable to image recognition implemented with neural networks 
+a solution may be to distort the image but we are back to original hard to use solution

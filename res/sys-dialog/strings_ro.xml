@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string>
+	<ok>De acord</ok>
+	<cancel>Anulează</cancel>
+	<prevent>Nu mai afișează dialogurile de sistem.</prevent>
+	<prompt>tipărește textul tău</prompt>
+</string>

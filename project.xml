@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<author>Iulian Rotaru</author>
+	<name>widgets</name>
+	<display>j(s)-widgets</display>
+	<description>j(s)-lib stock widgets.</description>
+	<design>classic</design>
+	<locale>en</locale>
+</project>

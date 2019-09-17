@@ -1,0 +1,25 @@
+.js-widget-panorama {
+	height: 742px;
+	left: 0px;
+	margin: 40px 0;
+	cursor: move;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.js-widget-panorama .roller-band {
+	position: absolute;
+	height: 722px;
+	left: 0;
+	margin: 10px 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.js-widget-panorama .roller-band .section {
+	display: inline-block;
+	width: 824px;
+	height: 722px;
+	vertical-align: top;
+	margin-right: 80px;
+	background-color: #E8E8E8;
+}

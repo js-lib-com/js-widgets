@@ -1,0 +1,11 @@
+.js-widget-slider {
+	position: relative;
+	width: 100px;
+	height: 2px;
+	background: linear-gradient(to right, #008000, #00FF00);
+}
+
+.js-widget-slider .pointer {
+	position: absolute;
+	cursor: pointer;
+}

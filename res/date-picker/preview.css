@@ -1,0 +1,48 @@
+.js-widget-datepicker {
+	font-size: 11px;
+	font-weight: normal;
+	background-color: #EEE;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #CCCCCC #777777 #777777 #CCCCCC;
+	border-radius: 8px 8px 8px 8px;
+	opacity: 0.9;
+}
+
+.js-widget-datepicker.moving {
+	opacity: 0.6;
+}
+
+.js-widget-datepicker .caption {
+	font-size: 18px;
+	color: #000;
+	text-shadow: 2px 1px 0px #FFF;
+}
+
+.js-widget-datepicker .preview {
+	font-size: 18px;
+	color: #000;
+	text-shadow: 2px 1px 0px #FFF;
+}
+
+.js-widget-datepicker .week-days {
+}
+
+.js-widget-datepicker .month-days .button {
+	border-radius: 3px;
+}
+
+.js-widget-datepicker .month-days .button.today {
+	background: linear-gradient(#9ADEB5,#affcce,#9ADEB5);
+}
+
+.js-widget-datepicker .selected {
+	border-width: 2px;
+	border-color: #0070DF;
+}
+
+.js-widget-datepicker .disabled {
+	color: #AAA;
+	border-color: #B8B8B8;
+	background-image: none;
+}

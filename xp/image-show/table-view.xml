@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compo>
+	<name>table-view</name>
+	<version>1.0.0</version>
+	<deps>table-paging, js-lib</deps>
+</compo>

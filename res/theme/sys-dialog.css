@@ -1,0 +1,33 @@
+.js-sys-dialog {
+	background: linear-gradient(to right, #7c7c7c 0%, #7c7c7c 20%, #a4a4a4 20%, #a4a4a4	100%);
+	border-style: solid;
+	border-width: 1px;
+	border-color: #DEE7EF #DEE7EF #000 #000;
+	box-shadow: 8px 8px 30px 4px #E8E8E8;
+	font-family: Calibri;
+}
+
+.js-sys-dialog .caption {
+	font-size: 2.8rem;
+}
+
+.js-sys-dialog .content {
+	background-color: #427bab;
+}
+
+.js-sys-dialog .content p {
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+	color: #dee7ef;
+}
+
+.js-sys-dialog .content button {
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0;
+	width: 100px;
+	background-color: #64b9e4;
+	color: #DEE7EF;
+	cursor: pointer;
+	opacity: 1.0;
+}

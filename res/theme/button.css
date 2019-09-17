@@ -1,0 +1,56 @@
+/*
+button, .button {
+	height: 24px;
+	min-width: 60px;
+	text-align: center;
+	padding: 0px 4px;
+	border: solid 1px #888888;
+	background: linear-gradient(#D7E9F7, #F8F9FB, #D7E9F7);
+	color: #000000;
+	text-shadow: 1px 1px 0px #FFF;
+	cursor: pointer;
+}
+
+button:hover, .button:hover {
+	border-color: #009300;
+	background: linear-gradient(#D4EDD0, #F8F9FB, #D4EDD0);
+	color: #009300;
+}
+*/
+
+button {
+	position: relative;
+	background-color: #62a30c;
+	xbox-shadow: 0 2px 1px 1px #CCC;
+	padding: 6px 40px;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: background-color .3s;
+	box-sizing: border-box;
+}
+
+button:active {
+	background-color: #7cbc27;
+	box-shadow: none;
+}
+
+button:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 9999px;
+	background-color: rgba(236, 240, 241, .3);
+	width: 0;
+	height: 0;
+	transform: translate(-50%, -50%);
+}
+
+button:active:before {
+	width: 140%;
+	height: 200%;
+	transition: width .2s ease-out, height .2s ease-out;
+}

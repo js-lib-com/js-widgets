@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>widgets</display-name>
+	<description>j(s)-lib Widgets Preview</description>
+	<context-param>
+		<param-name>PROJECT_DIR</param-name>
+		<param-value>D:\docs\workspaces\js-lib\wtf\script\widgets</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>js.servlet.TinyContainer</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>preview</servlet-name>
+		<servlet-class>js.wood.PreviewServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>preview</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>

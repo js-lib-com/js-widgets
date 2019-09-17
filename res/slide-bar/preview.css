@@ -1,0 +1,10 @@
+.js-widget-slidebar {
+	left: 300px;
+	top: 100px;
+	width: 300px;
+	height: 18px;
+}
+
+.js-widget-slidebar .pointer {
+	left: 100px;
+}
